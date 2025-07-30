@@ -13,9 +13,9 @@
   - [📘 Table of Contents](#-table-of-contents)
   - [📋 Project Overview](#-project-overview)
   - [✅ Challenges Completed](#-challenges-completed)
-    - [1. API-only XSS](#1-api-only-xss)
-    - [2. Forged Feedback](#2-forged-feedback)
-    - [3. Admin Registration](#3-admin-registration)
+    - [1. Admin Registration](#1-admin-registration)
+    - [2. API-only XSS](#2-api-only-xss)
+    - [3. Forged Feedback](#3-forged-feedback)
 
 ---
 
@@ -35,7 +35,16 @@ The repository includes:
 
 Each challenge targets a **different vulnerability category** and is documented in detail:
 
-### 1. API-only XSS
+### 1. Admin Registration
+- **Category:** Broken Access Control → Privilege Escalation
+- **Flag:** `score-board#Admin Registration`
+- **Summary:** Gains admin rights during signup by injecting `"role": "admin"` in the request.
+- 📄 [Read full report](challenges/admin_Registration/README.md)  
+- 🎥 [Watch video demo](https://www.loom.com/share/927a884d9b18462ca6f5155743559850?sid=574d181f-dd2e-4af7-a48b-a1279c48c437)
+
+---
+
+### 2. API-only XSS
 - **Category:** Cross-Site Scripting → Stored XSS via API
 - **Flag:** `score-board#API-only XSS`
 - **Summary:** Injects a malicious payload via `PUT /api/Products/:id` that triggers on product pages.
@@ -44,7 +53,7 @@ Each challenge targets a **different vulnerability category** and is documented 
 
 ---
 
-### 2. Forged Feedback
+### 3. Forged Feedback
 - **Category:** Broken Access Control → Horizontal Privilege Escalation
 - **Flag:** `score-board#Forged Feedback`
 - **Summary:** Sends feedback under another user's identity by modifying the `UserId`.
@@ -53,11 +62,3 @@ Each challenge targets a **different vulnerability category** and is documented 
 
 ---
 
-### 3. Admin Registration
-- **Category:** Broken Access Control → Privilege Escalation
-- **Flag:** `score-board#Admin Registration`
-- **Summary:** Gains admin rights during signup by injecting `"role": "admin"` in the request.
-- 📄 [Read full report](challenges/admin_Registration/README.md)  
-- 🎥 [Watch video demo](https://www.loom.com/share/927a884d9b18462ca6f5155743559850?sid=574d181f-dd2e-4af7-a48b-a1279c48c437)
-
----
