@@ -31,7 +31,7 @@ The repository includes:
 
 ---
 
-## ✅ Challenges Completed
+## ✅ Challenges
 
 Each challenge targets a **different vulnerability category** and is documented in detail:
 
