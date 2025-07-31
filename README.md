@@ -16,6 +16,7 @@
     - [1. Admin Registration](#1-admin-registration)
     - [2. API-only XSS](#2-api-only-xss)
     - [3. Forged Feedback](#3-forged-feedback)
+    - [4. CAPTCHA Bypass](#4-captcha-bypass)
 
 ---
 
@@ -62,3 +63,11 @@ Each challenge targets a **different vulnerability category** and is documented 
 
 ---
 
+### 4. CAPTCHA Bypass
+- **Category:** Broken Anti-Automation  
+- **Flag:** `score-board#CAPTCHA Bypass`  
+- **Summary:** Reuses a solved CAPTCHA token for unlimited feedback submissions, bypassing anti-bot measures.  
+- 📄 [Read full report](challenges/CAPTCHA_Bypass/README.md)  
+- 🎥 [Watch video demo](https://www.loom.com/share/61e8371a3ed447cc9ed6270ffead11cd?sid=a9cb9be7-d181-4765-9c18-745fcd1b1047)
+
+---
